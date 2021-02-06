@@ -1,0 +1,318 @@
+/* 
+--------
+First component
+header
+--------
+*/
+#head-text{
+    font-size:7vw;
+    color:white;
+    font-weight: bold;
+    text-align:center;
+}
+#head-subtext{
+    font-size:4.5vw;
+    color:white;
+    font-weight: bold;
+    text-align:center;
+}
+#head-description{
+    color:white;
+    text-align:center;
+}
+.header-main{
+    position: relative;
+    background-image: url("../assets/headerImg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #3A493D;
+    min-height:80%;
+}
+#header-img{
+    width:100vw;
+    height:100vh;
+}
+#strike-logo{
+    margin-top:5%;
+    padding-left:0;
+    mix-blend-mode: lighten;    
+}
+#phone-group{
+    color:white;
+    font-size: 16pt;
+    margin-top:2%;
+}
+.phone-number{
+    top:0;
+    left:0;
+}
+#language-select{
+    display:inline-block;
+}
+.space{
+    height:16vh;
+}
+/*
+--------
+END first component
+--------
+*/
+/*
+--------
+Second component
+AtmosphereCard
+--------
+*/
+
+.card-img{
+    width:100%;
+    height: auto;
+}
+#merita-text{
+    margin-top:0vh;
+    color:#3A493D;
+    font-weight: bold;
+    text-align:center; 
+}
+@media (max-width:2000px){
+    .text-card-big{
+        font-size:3.5vw;
+    }
+    #merita-text{
+        font-size:5vw;
+    }
+    }
+   
+    @media (max-width:1200px){
+       
+        .text-card-big{
+            font-size:3.5vw;
+        }
+        #merita-text{
+            font-size:7vw;
+        }
+        }
+        @media (max-width:995px){
+            .text-card{
+                text-align:center;
+                padding:0px;
+            }
+            .text-card-big{
+                font-size:3.5vw;
+            }
+            #merita-text{
+                font-size:7vw;
+            }
+            }
+
+@media (max-width:600px){
+.text-card{
+    text-align:center;
+}
+.text-card-big{
+    font-size:7vw;
+}
+#merita-text{
+    font-size:8vw;
+}
+}
+
+
+/*
+--------
+END Second component
+--------
+*/
+
+/*
+--------
+Third Component Organizam
+--------
+*/
+
+@media (max-width:2000px){
+    .organizam-img{
+        width:100%;
+        height:auto;
+    }
+    .organizam-text{
+    color:#3A493D;
+    }
+    }
+@media (max-width:780px){
+.organizam-img{
+    width:auto;
+    text-align: center;
+}
+.organizam-text{
+    font-size: 6vw;
+    color:#3A493D;
+}
+}
+
+@media (min-width:760px) and (max-width:780px){
+    .organizam-img{
+        width:100%;
+        text-align: center;
+    }
+    .organizam-text{
+        font-size: 3vw;
+        color:#3A493D;
+    }
+    }
+
+/*
+--------
+END Third Component Organizam
+--------
+*/
+
+/*
+--------
+Fourth Component Carousel
+--------
+*/
+  .slide-show{
+      height:100%;
+  }
+
+/*
+--------
+END Fourth Component Carousel
+--------
+*/
+
+/*
+--------
+Price Component 
+--------
+*/
+hr{
+    width:66% !important;
+    overflow:hidden !important;
+ border-top:1px solid rgb(205, 232, 211) !important;
+}
+.price-text-color{
+    color:#E9E5DE;
+}
+.price-main{
+    background: url('../assets/price.png');
+    min-height:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width:100%;
+}
+
+@media (max-width:2000px){
+    .price-text-header1{
+        text-align: center;
+        font-size:4.5vw;
+      }
+    
+      .price-text-header2{
+        text-align: center;
+        font-size: 2.5vw;
+      }
+    
+      .price-text-body{
+          text-align: center;
+          font-size:2vw;
+          color:#FFFFFF;
+      }
+}
+
+
+
+@media (max-width:1600px){
+    .price-text-header1{
+        text-align: center;
+        font-size: 7vw;
+      }
+    
+      .price-text-header2{
+        text-align: center;
+        font-size: 4vw;
+      }
+    
+      .price-text-body{
+          letter-spacing: -2.5%;
+          text-align: center;
+          font-size:2vw;
+          color:#FFFFFF;
+      }
+}
+
+
+
+@media (max-width:600px){
+    .price-text-header1{
+        text-align: center;
+        font-size: 10vw;
+      }
+    
+      .price-text-header2{
+        text-align: center;
+        font-size: 6vw;
+      }
+    
+      .price-text-body{
+          letter-spacing: -2.5%;
+          text-align: center;
+          font-size:5vw;
+          color:#FFFFFF;
+      }
+}
+
+
+/*
+--------
+END Price Component 
+--------
+*/
+.leaflet-container {
+    height: 300px;
+    width: 100%;
+  }
+  .map-wrapper{
+      margin-top:2vh;
+      background-color: #282828;
+  }
+#language-select:hover{
+    opacity: 0.5;
+    text-decoration: underline;
+    cursor:pointer;
+}
+.text-style{
+text-align:center;
+}
+
+
+.first-row{
+    margin-top: 5%;
+}
+
+.helper{
+    border:solid;
+    border-color:red;
+}
+
+
+
+
+@media  (max-width: 1200px) {
+   
+    .text-left{
+
+    }
+  }
+  
+  .contact-text-body{
+      color:black;
+      text-align:center;
+      font-size:2vw;
+  }
+
+ 
