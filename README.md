@@ -1,6 +1,7 @@
 # reactjs Strikeball frontend
 <br>
 <br>
+
 ## Requirements
 
 nodejs v12.19.0
@@ -12,7 +13,9 @@ npm v6.14.8
 You can also install yarn with `npm install yarn@latest`
 <br>
 <br>
+  
 ## Steps for running
+
 <br>
 1. Clone the project : `git clone https://github.com/roscarobb21/strikeball-new.git` and cd in dir
   <br>
