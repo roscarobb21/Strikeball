@@ -25,8 +25,15 @@ You can also install yarn with `npm install yarn@latest`
 
 3. Run the project with `yarn start` or `npm start`
 
+## Change text language:
+
+1. Navigate to ./src/assets
+2. Open `lang-ro.json` or `lang-ru.json` to edit
+
 ## Deploy
 
 In project directory run `yarn build` or `npm run build`
 
 Wait for the build to finish and copy the build folder into your server or install `yarn global add serve` and run `serve -s build`
+
+
