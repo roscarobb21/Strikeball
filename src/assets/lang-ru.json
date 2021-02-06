@@ -1,0 +1,51 @@
+{
+    "header":{
+        "text":"Îți place odihna activă?",
+        "subtext":"Te invităm să încerci",
+        "underline":"STRIKEBALL!",
+        "description":"O activitate sportivă în care participanții trec jocuri, precum Counter-Strike, Escape from Tarkov, Call of Duty în realitate. Tu și echipa ta veți efectua anumite misiuni, cu ajutorul unor replici de arme, ce lansează proiectile sferice de plastic, utilizând echipamente specifice cu cele din joc."
+    },
+    "atmosphere":{
+        "merita":"Iată de ce merită să încerci:",
+        "firstCardHeader":"Te scufunzi într-o atmosferă de neuitat",
+        "firstCardBody":"STRIKEBALL e despre adrenalină! Așa ceva cu siguranță nu ai mai încercat. Îți oferim o experiență unică, care ți se va întipări în memorie pe mult timp.",
+        "secondCardHeader":"Îmbini utilul cu plăcutul",
+        "secondCardBody":"STRIKEBALL e despre sport! Pe parcursul întregului joc nu vei sta locului nici o clipă. Nu-ți face griji – va fi atât de distractiv, încât nici nu vei observa că ai făcut mișcare, pentru o săptămână înainte.",
+        "thirdCardHeader":"Dezvolți spiritul de echipă",
+        "thirdCardBody":"STRIKEBALL e despre lucru în echipă! Doar interacționând cu jucătorii, poți trece misiunile cu brio. Acest joc e oportunitate perfectă de a învăța să comunici efectiv și poate chiar de a te pune în locul unui lider, care va dirija întreaga acțiune.",
+        "fourthCardHeader":"Devii o versiune mai bună a ta",
+        "fourthCardBody":"STRIKEBALL e despre un restart! Aici îți poți descărca toate emoțiile negative, găsi răspunsurile la întrebările care nu te lasă în pace și descoperi calitățile tale ascunse.",
+        "fifthCardHeader":"Îți faci prieteni noi",
+        "fifthCardBody":"STRIKEBALL e despre o comunitate unită! Îți garantăm că vizitând măcar un joc de-al nostru, nu vei pleca acasă fără cunoștințe noi."
+    },
+    "organize":{
+        "header":"ORGANIZĂM:",
+        "firstbody":"TEAM BUILDING",
+        "secondbody":"ZILE DE NAȘTERE",
+        "thirdbody":"TIR",
+        "fourthbody":"PETRECERI TEMATICE",
+        "button":"+ OFERIM ECHIPAMENTE ÎN ARENDĂ (FOTO/VIDEO/EVENIMENTE)"
+    },
+    "price":{
+        "header":"Preț",
+        "body":["Prețul pentru o persoană este de ", "400 de lei ", "și acesta include:"],
+        "items":[
+            "REPLICA ARMEI",
+            "500 DE BILE",
+            "ECHIPAMENTUL DE PROTECȚIE",
+            "(MASCA, CASCA, OCHELARII, VESTA, UNIFORMA ȘI MĂNUȘILE)",
+            "DIVERSE SCENARII",
+            "SPAȚII SPECIAL AMENAJATE",
+            "INSTRUCTAJ ȘI ASISTENȚĂ PE TOATĂ DURATA JOCULUI"
+        ],
+        "button":[
+            "* Pentru echipele mai mari de 11 persoane, prețul e de",
+            " 350 de lei"
+        ]
+    },
+    "contact":{
+        "header":"CONTACTEAZĂ-NE",
+        "subheader":"PETRECE O ZI DE NEUITAT CU STRIKEBALL.MD!",
+        "button":"Rezervă un joc!"
+    }
+}
