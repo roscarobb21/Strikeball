@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+
 
 import {Container, Row, Col} from 'reactstrap';
 
@@ -11,28 +11,23 @@ import Contact from '../components/Contact';
 import Map from '../components/Map';
 import Footer from '../components/Footer';
 
-
 import Image from 'react-bootstrap/Image'
-import '../components/Components.css';
 
 
 import StrikeLogo from '../assets/strikeLogo.png';
 import langRo from '../assets/lang-ro.json';
 import langRu from '../assets/lang-ru.json';
-import PhoneImg from '../assets/phone.png'
+import PhoneImg from '../assets/phone.png';
 
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  Redirect
 } from "react-router-dom";
 
-
-
-
+import '../components/Components.css';
+import './App.css';
 
 class Entry extends React.Component {
   constructor(props){
@@ -44,28 +39,31 @@ class Entry extends React.Component {
   async componentWillMount(){
     let prevLang = await window.localStorage.getItem("lang");
     if(prevLang===null || prevLang===undefined){
-      window.localStorage.setItem("lang", "ro");
-      window.location.reload();
+     await window.localStorage.setItem("lang", "ro");
+     this.setState({lang:"ro"})
     }else {
-      this.setState({lang:prevLang})
+      this.setState({lang:prevLang});
     }
+
   }
+
   render() {
-    console.log('this.state.lang', this.state.lang)
     if(this.state.lang===null){
       return(null)
     }
     return (
       <Router>
         <Switch>
-          <Route path="/ro">
+        <Route path="/ro">
             <AppRo/>
           </Route>
           <Route path="/ru">
           <AppRu/>
           </Route>
-          <Route path="/" >
-            {this.state.lang==="ro"?<Redirect to="/ro"></Redirect>:this.state.lang==="ru"?<Redirect to="/ru"></Redirect>:<Redirect to='/ro'></Redirect>}
+          <Route path="/" > 
+           {this.state.lang==='ru'&& <AppRu/>}
+           {this.state.lang==='ro'&& <AppRo/>}
+           {this.state.lang===null&& <AppRo/>}
           </Route>
         </Switch>
     </Router>
@@ -79,7 +77,8 @@ class AppRo extends React.Component {
     constructor(props) {
         super(props);
         this.state={
-          language:"ro"
+          language:"ro",
+          width:null
         }
     }
     async componentWillMount(){
@@ -90,7 +89,17 @@ class AppRo extends React.Component {
       }else {
   
       }
+      this.setState({width:window.innerWidth})
     }
+    handleResize =()=>{
+      this.setState({width:window.innerWidth})
+  }
+    componentDidMount(){
+      window.addEventListener('resize', this.handleResize)
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
+  }
 
     render() {
         return (
@@ -104,17 +113,25 @@ class AppRo extends React.Component {
                        <a href="/"> <Image src={StrikeLogo}
                             id="strike-logo"/></a>
                     </Col>
-                    <Col sm="0" md="0" lg="12" xl="7"></Col>
-                    <Col sm="12" md="12" lg="12"  xl="4" id="phone-group" className="text-style" >
+                    <Col sm="0" md="0" lg="12" xl="6"></Col>
+                    <Col sm="12" md="12" lg="12"  xl="5" id="phone-group" className="text-style" >
+                      <Row>
+                        <Col>
                     <div style={{display:'inline'}} >
-                        
-                        <Image src={PhoneImg}/>
+                        <span onClick={()=>{
+                          window.open('tel:069403879')
+                        }}className="change-cursor">
+                        <Image src={PhoneImg} style={{paddingBottom:'5px'}}/>
                         069403879&#160;
-                        <Image src={PhoneImg}/>
-                        &nbsp;
+                        </span>
+                        <span onClick={()=>{window.open('tel:069844998')}}className="change-cursor" >
+                        <Image src={PhoneImg} style={{paddingBottom:'5px'}}/>
                         069844998
+                        </span>
+                        <span className="change-cursor" onClick={()=>{window.open('mailto:strikeball@gmail.com')}}>
                         &nbsp;
                         STRIKEBALL@GMAIL.COM 
+                        </span>
                        <div id="language-select" onClick={()=>{
                          localStorage.setItem("lang", "ro")
                          window.location.assign('/ro')
@@ -123,24 +140,33 @@ class AppRo extends React.Component {
                         window.location.assign('/ru')
                        }}>&nbsp;RU</div>
                         </div>
+                        </Col>
+                        </Row>
                     </Col>
                 </Row>
                 <Row style={
                     {marginTop: '4%'}
-                }>
+                } >
                     <Col></Col>
                     <Col lg="auto">
                         <Row>
-                            <Col></Col>
-                            <Col xs="12" sm="12" md="12">
+                            <Col ></Col>
+                            <Col xs="12" sm="12" md="12"  className="">
                                 <p id="head-text">{langRo.header.text}</p>
-                                <p id="head-subtext">{langRo.header.subtext} <span style={{display:'inline-block', textDecoration:'underline'}}>{langRo.header.underline}</span></p>
+                               
                                 <p></p>
                             </Col>
                         </Row>
                         <Row>
-                            <Col></Col>
-                            <Col sm="12" lg="3">
+                            <Col ></Col>
+                            <Col xs="12" sm="12" md="12" className="">
+                                <p id="head-subtext">{langRo.header.subtext} <span style={{display:'inline-block', textDecoration:'underline'}}>{langRo.header.underline}</span>&nbsp;&nbsp;</p>
+                                <p></p>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md="0" lg="4"  ></Col>
+                            <Col sm="12" lg="4" >
                                 <div>
                                     <p id="head-description">
                                     {langRo.header.description}
@@ -148,7 +174,7 @@ class AppRo extends React.Component {
                                 </div>
                                 <div className="space"></div>
                             </Col>
-                            <Col></Col>
+                            <Col md="0" lg="4" className=""></Col>
                         </Row>
 
                     </Col>
@@ -204,7 +230,8 @@ class AppRu extends React.Component {
   constructor(props) {
       super(props);
       this.state={
-        language:"ro"
+        language:"ro",
+        width:null
       }
   }
   async componentWillMount(){
@@ -215,10 +242,19 @@ class AppRu extends React.Component {
     }else {
 
     }
+    this.setState({width:window.innerWidth})
   }
+  handleResize =()=>{
+    this.setState({width:window.innerWidth})
+}
+  componentDidMount(){
+    window.addEventListener('resize', this.handleResize)
+}
+componentWillUnmount() {
+  window.removeEventListener('resize', this.handleResize);
+}
 
   render() {
-    
       return (
           <Container fluid={true}
               className="p-0">
@@ -230,43 +266,60 @@ class AppRu extends React.Component {
                      <a href="/"> <Image src={StrikeLogo}
                           id="strike-logo"/></a>
                   </Col>
-                  <Col sm="0" md="0" lg="12" xl="7"></Col>
-                  <Col sm="12" md="12" lg="12"  xl="4" id="phone-group" className="text-style" >
-                  <div style={{display:'inline'}} >
-                      
-                      <Image src={PhoneImg}/>
-                      069403879&#160;
-                      <Image src={PhoneImg}/>
-                      &nbsp;
-                      069844998
-                      &nbsp;
-                      STRIKEBALL@GMAIL.COM 
-                     <div id="language-select" onClick={()=>{
-                       localStorage.setItem("lang", "ro")
-                       window.location.assign('/ro')
-                     } }>&#8203; RO&nbsp;</div>|<div id="language-select" onClick={()=>{
-                      localStorage.setItem("lang", "ru")
-                      window.location.assign('/ru')
-                     }}>&nbsp;RU</div>
-                      </div>
-                  </Col>
+                  <Col sm="0" md="0" lg="12" xl="6"></Col>
+                    <Col sm="12" md="12" lg="12"  xl="5" id="phone-group" className="text-style" >
+                      <Row>
+                        <Col>
+                    <div style={{display:'inline'}} >
+                        <span onClick={()=>{
+                          window.open('tel:069403879')
+                        }}className="change-cursor">
+                        <Image src={PhoneImg} style={{paddingBottom:'5px'}}/>
+                        069403879&#160;
+                        </span>
+                        <span onClick={()=>{window.open('tel:069844998')}}className="change-cursor" >
+                        <Image src={PhoneImg} style={{paddingBottom:'5px'}}/>
+                        069844998
+                        </span>
+                        <span className="change-cursor" onClick={()=>{window.open('mailto:strikeball@gmail.com')}}>
+                        &nbsp;
+                        STRIKEBALL@GMAIL.COM 
+                        </span>
+                       <div id="language-select" onClick={()=>{
+                         localStorage.setItem("lang", "ro")
+                         window.location.assign('/ro')
+                       } }>&#8203; RO&nbsp;</div>|<div id="language-select" onClick={()=>{
+                        localStorage.setItem("lang", "ru")
+                        window.location.assign('/ru')
+                       }}>&nbsp;RU</div>
+                        </div>
+                        </Col>
+                        </Row>
+                    </Col>
               </Row>
               <Row style={
                   {marginTop: '4%'}
-              }>
+              } >
                   <Col></Col>
                   <Col lg="auto">
                       <Row>
-                          <Col></Col>
-                          <Col xs="12" sm="12" md="12">
+                          <Col ></Col>
+                          <Col xs="12" sm="12" md="12"  className="">
                               <p id="head-text">{langRu.header.text}</p>
-                              <p id="head-subtext">{langRu.header.subtext} <span style={{display:'inline-block', textDecoration:'underline'}}>{langRu.header.underline}</span></p>
+                             
                               <p></p>
                           </Col>
                       </Row>
                       <Row>
-                          <Col></Col>
-                          <Col sm="12" lg="3">
+                          <Col ></Col>
+                          <Col xs="12" sm="12" md="12" className="">
+                              <p id="head-subtext">{langRu.header.subtext} <span style={{display:'inline-block', textDecoration:'underline'}}>{langRu.header.underline}</span>&nbsp;&nbsp;</p>
+                              <p></p>
+                          </Col>
+                      </Row>
+                      <Row>
+                          <Col md="0" lg="4"  ></Col>
+                          <Col sm="12" lg="4" >
                               <div>
                                   <p id="head-description">
                                   {langRu.header.description}
@@ -274,7 +327,7 @@ class AppRu extends React.Component {
                               </div>
                               <div className="space"></div>
                           </Col>
-                          <Col></Col>
+                          <Col md="0" lg="4" className=""></Col>
                       </Row>
 
                   </Col>
@@ -284,6 +337,11 @@ class AppRu extends React.Component {
                   </Col>
               </Row>
               <Row>
+                    <Col></Col>
+                    <Col md="12" lg="12"><p id="merita-text">{langRu.atmosphere.merita}&nbsp;</p></Col>
+                    <Col></Col>
+                </Row>
+                <Row>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
                 <AtmosphereCard  props={langRu}/>
                 </Col>
@@ -328,3 +386,19 @@ class AppRu extends React.Component {
 
 
 export default Entry;
+
+
+//{this.state.lang==="ro"?<Redirect to="/ro"></Redirect>:this.state.lang==="ru"?<Redirect to="/ru"></Redirect>:this.state.lang===null?<Redirect to="/ro"></Redirect>:null}
+/**
+ * <Route path="/ro">
+            <AppRo/>
+          </Route>
+          <Route path="/ru">
+          <AppRu/>
+          </Route>
+          <Route path="/" > 
+           {this.state.lang==='ru'&& <AppRu/>}
+           {this.state.lang==='ro'&& <AppRo/>}
+           {this.state.lang===null&& <AppRo/>}
+          </Route>
+ */

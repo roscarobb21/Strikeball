@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import {Container,Row, Col, Button} from 'reactstrap';
 
-import langRo from '../assets/lang-ro.json';
-
 import './Components.css'
+
 class Price extends Component {
     constructor(props){
         super(props)
@@ -23,7 +22,7 @@ class Price extends Component {
                     </Row>
                     <Row>
                        <Col></Col>
-                       <Col md="8"><p className="price-text-color price-text-header2">{this.state.lang.price.body[0]}<span style={{color:'#FF7D7D'}}>{this.state.lang.price.body[1]}</span>{langRo.price.body[2]} </p>
+                       <Col md="8"><p className="price-text-color price-text-header2">{this.state.lang.price.body[0]}<span style={{color:'#FF7D7D', whiteSpace:'pre'}}>{this.state.lang.price.body[1]}</span>{this.state.lang.price.body[2]} </p>
                        <hr style={{color:'#859A89'}}/>
                        </Col>
                        <Col></Col>
@@ -34,7 +33,7 @@ class Price extends Component {
                     <div className="price-text-body">
                         <p>•&nbsp;{this.state.lang.price.items[0]}</p>
                         <p>•&nbsp;{this.state.lang.price.items[1]}</p>
-                        <p>•&nbsp;{this.state.lang.price.items[2]} <br></br>{this.state.lang.price.items[3]}</p>
+                        <p>•&nbsp;{this.state.lang.price.items[2]} <br></br><span className="price-text-subbody">{this.state.lang.price.items[3]}</span></p>
                         <p>•&nbsp;{this.state.lang.price.items[4]}</p>
                         <p>•&nbsp;{this.state.lang.price.items[5]}</p>
                         <p>•&nbsp;{this.state.lang.price.items[6]}</p>
@@ -45,7 +44,7 @@ class Price extends Component {
                     <Row>
                         <Col>
                         <div style={{textAlign:'center', marginTop:'1vh'}}>
-                <Button outline size="lg" style={{ borderRadius: 50 , padding:'30px', color:'white'}}> {this.state.lang.price.button[0]}<span style={{color:'#FF7D7D'}}>{this.state.lang.price.button[1]}</span></Button>
+                <Button outline size="lg" style={{ borderRadius: 55 , padding:'20px', color:'white'}}> {this.state.lang.price.button[0]}<span style={{color:'#FF7D7D'}}>{this.state.lang.price.button[1]}</span></Button>
                 <div style={{minHeight: '100px'}}>
 
                 </div>

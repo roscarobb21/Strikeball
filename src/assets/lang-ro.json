@@ -13,7 +13,7 @@
         "secondCardBody":"STRIKEBALL e despre sport! Pe parcursul întregului joc nu vei sta locului nici o clipă. Nu-ți face griji – va fi atât de distractiv, încât nici nu vei observa că ai făcut mișcare, pentru o săptămână înainte.",
         "thirdCardHeader":"Dezvolți spiritul de echipă",
         "thirdCardBody":"STRIKEBALL e despre lucru în echipă! Doar interacționând cu jucătorii, poți trece misiunile cu brio. Acest joc e oportunitate perfectă de a învăța să comunici efectiv și poate chiar de a te pune în locul unui lider, care va dirija întreaga acțiune.",
-        "fourthCardHeader":"Devii o versiune mai bună a ta",
+        "fourthCardHeader":"Devii o versiune mai bună",
         "fourthCardBody":"STRIKEBALL e despre un restart! Aici îți poți descărca toate emoțiile negative, găsi răspunsurile la întrebările care nu te lasă în pace și descoperi calitățile tale ascunse.",
         "fifthCardHeader":"Îți faci prieteni noi",
         "fifthCardBody":"STRIKEBALL e despre o comunitate unită! Îți garantăm că vizitând măcar un joc de-al nostru, nu vei pleca acasă fără cunoștințe noi."
@@ -24,7 +24,7 @@
         "secondbody":"ZILE DE NAȘTERE",
         "thirdbody":"TIR",
         "fourthbody":"PETRECERI TEMATICE",
-        "button":"+ OFERIM ECHIPAMENTE ÎN ARENDĂ (FOTO/VIDEO/EVENIMENTE)"
+        "button":["+ OFERIM ECHIPAMENTE ÎN ARENDĂ", "(FOTO/VIDEO/EVENIMENTE)"]
     },
     "price":{
         "header":"Preț",
@@ -46,6 +46,6 @@
     "contact":{
         "header":"CONTACTEAZĂ-NE",
         "subheader":"PETRECE O ZI DE NEUITAT CU STRIKEBALL.MD!",
-        "button":"Rezervă un joc!"
+        "button":"Comandă un joc!"
     }
 }

@@ -3,6 +3,7 @@ import {Container, Row, Col} from 'reactstrap';
 import Image from 'react-bootstrap/Image';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import Phone from '../assets/phone.png';
+import Social from './Social';
 import './Components.css';
 
 class Map extends Component {
@@ -20,7 +21,7 @@ class Map extends Component {
   />
   <Marker position={[46.832350, 28.609953]}>
     <Popup>
-      A pretty CSS3 popup. <br /> Easily customizable.
+    46°49'56.5"N 28°36'35.8"E
     </Popup>
   </Marker>
 </MapContainer>
@@ -31,12 +32,30 @@ class Map extends Component {
                    <Col></Col>
                    <Col>
                    <Row style={{textAlign:'center'}}>
-                       <Col md="12" lg="12" xl="4" ><span style={{textAlign:'center'}}><Image src={Phone}/>&nbsp;069403879&nbsp;</span></Col>
-                       <Col md="12" lg="12" xl="4"><Image src={Phone}/>&nbsp;069844998</Col>
-                       <Col md="12" lg="12" xl="4">STRIKEBALL@GMAIL.COM</Col>
+                       <Col md="12" lg="12" xl="4" ><span onClick={()=>{window.open('tel:069403879')}} className="change-cursor">
+                        <Image src={Phone} style={{paddingBottom:'5px'}}/>
+                        069403879&#160;
+                        </span></Col>
+                       <Col md="12" lg="12" xl="4"> <span className="change-cursor" onClick={()=>{
+                          window.open('tel:069844998')
+                       }}>
+                        <Image src={Phone} style={{paddingBottom:'5px'}}/>
+                        069844998
+                        </span></Col>
+                       <Col md="12" lg="12" xl="4"><span className="change-cursor" onClick={()=>{
+                         window.open('mailto:strikeball@gmail.com')
+                       }}>STRIKEBALL@GMAIL.COM</span></Col>
                    </Row>
                    </Col>
                    <Col></Col>
+               </Row>
+               <Row style={{marginTop:'4vh', marginBottom:'1vh', padding:'10px'}}>
+                 <Col md="12" lg="12" xl="4"></Col>
+                 <Col md="12" lg="12" xl="4" style={{textAlign:'center'}}>
+               <Social/>
+                 </Col>
+                 <Col md="12" lg="12" xl="4"></Col>
+               
                </Row>
             </div>
             </div>

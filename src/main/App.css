@@ -2,3 +2,8 @@
   padding:0 !important;
   overflow-x: hidden;
 }
+
+.helper{
+  border:solid;
+  border-color:red;
+}

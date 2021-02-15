@@ -14,7 +14,7 @@ class SlideShow extends Component {
             items:[{
                 src: firstSlide,
                 altText: 'Slide 1',
-                header: '21.10.2020',
+                header: '30.01.2021',
                 key: '1',
                 className:'h-100',
                 captionText:'Slide 1', 
@@ -22,7 +22,7 @@ class SlideShow extends Component {
               {
                 src: secondSlide,
                 altText: 'Slide 1',
-                header: '21.10.2020',
+                header: '30.01.2021',
                 key: '2',
                 className:'h-100',
                 captionText:'Slide 2', 
@@ -30,7 +30,7 @@ class SlideShow extends Component {
               {
                 src: thirdSlide,
                 altText: 'Slide 1',
-                header: '21.10.2020',
+                header: '30.01.2021',
                 key: '3',
                 className:'h-100',
                 captionText:'Slide 3', 
@@ -39,7 +39,7 @@ class SlideShow extends Component {
     }
     render() {
         return (
-            <div className="h-100">
+            <div className="h-20">
                 <UncontrolledCarousel items={this.state.items} className="" captionText="OK" />
             </div>
         );

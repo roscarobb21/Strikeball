@@ -1,51 +1,51 @@
 {
     "header":{
-        "text":"Îți place odihna activă?",
-        "subtext":"Te invităm să încerci",
-        "underline":"STRIKEBALL!",
-        "description":"O activitate sportivă în care participanții trec jocuri, precum Counter-Strike, Escape from Tarkov, Call of Duty în realitate. Tu și echipa ta veți efectua anumite misiuni, cu ajutorul unor replici de arme, ce lansează proiectile sferice de plastic, utilizând echipamente specifice cu cele din joc."
+        "text":"Хотите активно отдохнуть?",
+        "subtext":"Приглашаем Вас на",
+        "underline":"СТРАЙКБОЛ!",
+        "description":"Командный вид спорта, в котором участники проходят такие игры, как Counter-Strike, Escape from Tarkov, Call of Duty в реале. Вы и Ваша команда будете выполнять поставленные сценарием задачи с помощью копий оружия, которые запускают сферические пластиковые шарики."
     },
     "atmosphere":{
-        "merita":"Iată de ce merită să încerci:",
-        "firstCardHeader":"Te scufunzi într-o atmosferă de neuitat",
-        "firstCardBody":"STRIKEBALL e despre adrenalină! Așa ceva cu siguranță nu ai mai încercat. Îți oferim o experiență unică, care ți se va întipări în memorie pe mult timp.",
-        "secondCardHeader":"Îmbini utilul cu plăcutul",
-        "secondCardBody":"STRIKEBALL e despre sport! Pe parcursul întregului joc nu vei sta locului nici o clipă. Nu-ți face griji – va fi atât de distractiv, încât nici nu vei observa că ai făcut mișcare, pentru o săptămână înainte.",
-        "thirdCardHeader":"Dezvolți spiritul de echipă",
-        "thirdCardBody":"STRIKEBALL e despre lucru în echipă! Doar interacționând cu jucătorii, poți trece misiunile cu brio. Acest joc e oportunitate perfectă de a învăța să comunici efectiv și poate chiar de a te pune în locul unui lider, care va dirija întreaga acțiune.",
-        "fourthCardHeader":"Devii o versiune mai bună a ta",
-        "fourthCardBody":"STRIKEBALL e despre un restart! Aici îți poți descărca toate emoțiile negative, găsi răspunsurile la întrebările care nu te lasă în pace și descoperi calitățile tale ascunse.",
-        "fifthCardHeader":"Îți faci prieteni noi",
-        "fifthCardBody":"STRIKEBALL e despre o comunitate unită! Îți garantăm că vizitând măcar un joc de-al nostru, nu vei pleca acasă fără cunoștințe noi."
+        "merita":"Вот почему Вам стоит попробовать:",
+        "firstCardHeader":"Вы погрузитесь в незабываемую атмосферу",
+        "firstCardBody":"СТРАЙКБОЛ — это адреналин. Мы подарим вам уникальный экспириенс, который надолго останется в памяти. Можем поспорить, что такого Вы ещё не пробовали.",
+        "secondCardHeader":"Совместите полезное с приятным",
+        "secondCardBody":"СТРАЙКБОЛ — это спорт! На протяжении всей игры Вы точно не будете стоять на месте. Но не волнуйтесь. Это настолько весело, что Вы даже не заметите, как выполните всю программу тренировок на неделю вперёд.",
+        "thirdCardHeader":"Разовьёте командный дух",
+        "thirdCardBody":"СТРАЙКБОЛ — это командная работа! Только взаимодействуя с игроками, Вы можете успешно проходить миссии. Данная игра научит Вас, как эффективно общаться, а также поможет Вам обрести качества настоящего лидера, который будет руководить всем действием.",
+        "fourthCardHeader":"Станете лучшей версией себя",
+        "fourthCardBody":"СТРАЙКБОЛ — это перезагрузка. Здесь Вы можете оставить все свои негативные эмоции, найти ответы на вопросы, которые не давали Вам покоя долгое время и лучше узнать себя и свои качества.",
+        "fifthCardHeader":"Найдёте новых друзей",
+        "fifthCardBody":"СТРАЙКБОЛ — это большое комьюнити. Мы гарантируем, что, посетив хотя бы одну из наших игр, Вы не уедете домой без новых знакомств."
     },
     "organize":{
-        "header":"ORGANIZĂM:",
-        "firstbody":"TEAM BUILDING",
-        "secondbody":"ZILE DE NAȘTERE",
-        "thirdbody":"TIR",
-        "fourthbody":"PETRECERI TEMATICE",
-        "button":"+ OFERIM ECHIPAMENTE ÎN ARENDĂ (FOTO/VIDEO/EVENIMENTE)"
+        "header":"Организовываем:",
+        "firstbody":"ТИМБИЛДИНГИ",
+        "secondbody":"ДНИ РОЖДЕНИЯ",
+        "thirdbody":"ТИР",
+        "fourthbody":"ТЕМАТИЧЕСКИЕ ВЕЧЕРИНКИ",
+        "button":["+ Выдаём экипировку в аренду", "(фото/видео/мероприятия)"]
     },
     "price":{
-        "header":"Preț",
-        "body":["Prețul pentru o persoană este de ", "400 de lei ", "și acesta include:"],
+        "header":"ЦЕНА",
+        "body":["Стоимость игры в страйкбол на одного человека составляет", " 400 леев", " и включает в себя:"],
         "items":[
-            "REPLICA ARMEI",
-            "500 DE BILE",
-            "ECHIPAMENTUL DE PROTECȚIE",
-            "(MASCA, CASCA, OCHELARII, VESTA, UNIFORMA ȘI MĂNUȘILE)",
-            "DIVERSE SCENARII",
-            "SPAȚII SPECIAL AMENAJATE",
-            "INSTRUCTAJ ȘI ASISTENȚĂ PE TOATĂ DURATA JOCULUI"
+            "Реплику оружия",
+            "500 шаров",
+            "Защитную экипировку",
+            "(маска, шлем, защитные очки, жилет, униформа и перчатки)",
+            "Различные сценарии",
+            "Специально обустроенное пространство",
+            "Инструктаж и помощь на протяжении всей игры"
         ],
         "button":[
-            "* Pentru echipele mai mari de 11 persoane, prețul e de",
-            " 350 de lei"
+            "* Для команд от 11 человек цена - ",
+            " 350 леев"
         ]
     },
     "contact":{
-        "header":"CONTACTEAZĂ-NE",
-        "subheader":"PETRECE O ZI DE NEUITAT CU STRIKEBALL.MD!",
-        "button":"Rezervă un joc!"
+        "header":"Свяжитесь с нами",
+        "subheader":"Проведите незабываемый день вместе с STRIKEBALL.MD!",
+        "button":"Забронируйте игру!"
     }
 }

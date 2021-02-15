@@ -1,3 +1,13 @@
+
+
+
+.change-cursor:hover{
+    cursor:pointer;
+    opacity: .5;
+}
+
+
+
 /* 
 --------
 First component
@@ -11,7 +21,7 @@ header
     text-align:center;
 }
 #head-subtext{
-    font-size:4.5vw;
+    font-size:4.4vw;
     color:white;
     font-weight: bold;
     text-align:center;
@@ -78,7 +88,7 @@ AtmosphereCard
 }
 @media (max-width:2000px){
     .text-card-big{
-        font-size:3.5vw;
+        font-size:3.3vw;
     }
     #merita-text{
         font-size:5vw;
@@ -205,7 +215,16 @@ hr{
     background-size: cover;
     width:100%;
 }
-
+.price-button{
+    background-color:#DF5959 !important;
+    width:60%;
+    padding:20px !important;
+}
+.price-button:hover{
+    background-color:transparent !important;
+    color:black !important;
+   
+}
 @media (max-width:2000px){
     .price-text-header1{
         text-align: center;
@@ -222,6 +241,9 @@ hr{
           font-size:2vw;
           color:#FFFFFF;
       }
+      .price-text-subbody{
+        font-size:1vw;
+    }
 }
 
 
@@ -243,9 +265,32 @@ hr{
           font-size:2vw;
           color:#FFFFFF;
       }
+      .price-text-subbody{
+          font-size:1vw;
+      }
 }
 
-
+@media (max-width:1000px){
+    .price-text-header1{
+        text-align: center;
+        font-size: 7vw;
+      }
+    
+      .price-text-header2{
+        text-align: center;
+        font-size: 4vw;
+      }
+    
+      .price-text-body{
+          letter-spacing: -2.5%;
+          text-align: center;
+          font-size:2vw;
+          color:#FFFFFF;
+      }
+      .price-text-subbody{
+          font-size:1.5vw;
+      }
+}
 
 @media (max-width:600px){
     .price-text-header1{
@@ -264,6 +309,9 @@ hr{
           font-size:5vw;
           color:#FFFFFF;
       }
+      .price-text-subbody{
+        font-size:4vw;
+    }
 }
 
 
@@ -271,6 +319,41 @@ hr{
 --------
 END Price Component 
 --------
+*/
+/*
+* Carousel
+*/
+
+@media (max-width:2000px){
+    .carousel-inner{
+        height:100vh;
+    }
+    }
+   
+ @media (max-width:1700px){
+     .carousel-inner{
+         height:100%;
+     }
+       
+        }
+ @media (max-width:995px){
+           .carousel-inner{
+               height:100%;
+           }
+            }
+
+@media (max-width:600px){
+    .carousel-inner{
+        height:100%;
+    }
+}
+
+/*
+END CAROUSEL
+*/
+
+/*
+* MAP 
 */
 .leaflet-container {
     height: 300px;
@@ -287,6 +370,19 @@ END Price Component
 }
 .text-style{
 text-align:center;
+}
+
+/*
+Social 
+*/
+
+.social-icon{
+    width:32px;
+    height:32px;
+}
+.social-youtube{
+    height:32px;
+    width:48px;
 }
 
 

@@ -9,10 +9,23 @@ class Contact extends Component {
     constructor(props){
         super(props)
         this.state={
-            lang:null
+            lang:null,
+            width:null,
         }
         this.state.lang = props.props
     }
+    handleResize =()=>{
+        this.setState({width:window.innerWidth})
+    }
+    UNSAFE_componentWillMount(){
+        this.setState({width:window.innerWidth})
+    }
+componentDidMount(){
+    window.addEventListener('resize', this.handleResize)
+}
+componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
+  }
     render() {
         return (
             <div>
@@ -28,8 +41,8 @@ class Contact extends Component {
                 </Row>
                 <Row>
                     <Col></Col>
-                    <Col className="contact-text-body">
-                    <Button color="danger" size="lg" style={{borderRadius:50, padding:'20px'}} onClick={()=>{
+                    <Col xs="12" md="4" className="contact-text-body" style={{marginTop:'2vh', marginBottom:'2vh', paddingTop:'20px', paddingBottom:'30px'}}>
+                    <Button  size="lg" className="price-button" style={{borderRadius:this.state.width>500?"66px":"66px", }}  onClick={()=>{
                       window.open('tel:069403879');
                     }}>{this.state.lang.contact.button}</Button></Col>
                                         <Col></Col>
