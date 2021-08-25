@@ -17,7 +17,7 @@ You can also install yarn with `npm install yarn@latest`
 ## Steps for running
 
 
-1. Clone the project : `git clone https://github.com/roscarobb21/strikeball-new.git` and cd in dir
+1. Clone the project : `git clone https://github.com/roscarobb21/Strikeball.git` and cd in dir
 
 
 2. In working directory, run `yarn` or `npm install` and wait for package installation
